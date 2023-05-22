@@ -9,7 +9,57 @@
     <title>calcolo del prezzo del biglietto del treno</title>
 </head>
 <body>
-    
+    <div id="ticket">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class=" d-flex justify-content-around content">
+                        <div class="form_group">
+                            <label for="" class="control_label">Nome e Cognome</label>
+                            <input type="text" id="name" class="form_control" placeholder="Nome e Cognome">
+                        </div>
+                        <div class="form_group">
+                            <label for="" class="control_label">Km</label>
+                            <input type="number" min="0" class="form_control" id="km" placeholder="Km da percorrere">
+                        </div>
+                        <div class="form_group">
+                            <label for="" class="control_label">Age</label>
+                            <select name="" id="age" class="form_control">
+                                <option value="0">Minorenne</option>
+                                <option value="1">Maggiorenne</option>
+                                <option value="2">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-5 d-flex justify-content-center">
+                        <button id="calculate" class="mx-2 btn btn-sm btn-success">Calcola prezzo</button>
+                        <button id="reset" class="mx-2 btn btn-sm btn-secondary">Reset</button>
+                    </div>
+                    <div class="show_error"></div>
+                </div>
+                <div class="col-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nome e Cognome</th>
+                                <th>Km</th>
+                                <th>Discount</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span id="show_name"></span></td>
+                                <td><span id="show_km"></span></td>
+                                <td><span id="show_discount"></span></td>
+                                <td><span id="show_price"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>

@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: rgb(0, 0, 85);
+}
+
+#ticket{
+    background-color: white;
+    margin: 150px auto;
+    padding: 1.5rem;
+    max-width: 1140px;
+}
+
+.show_error{
+    color: red;
+    font-weight: 700;
+}
